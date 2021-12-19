@@ -6,6 +6,9 @@ output: js4shiny::html_document_js
 
 ## Solution
 
+We can iterate the original integer from left to right and build up the reverse integer one digit at a time. 
+While doing so, we can check beforehand whether or not appending another digit would cause overflow.
+
 ```{js}
 /**
  * @param {number} x

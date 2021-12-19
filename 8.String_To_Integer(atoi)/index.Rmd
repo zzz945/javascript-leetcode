@@ -1,0 +1,69 @@
+---
+output: js4shiny::html_document_js
+---
+
+# [8. String To Integer(atoi)](https://leetcode.com/problems/string-to-integer-atoi/)
+
+## Solution
+
+We can iterate the string character by character from left to right and build up the integer one digit at a time. 
+However, we stop building the number when a non-digit character is spotted, or the number becomes too large to fit inside 
+a 32-bit signed integer. 
+
+```{js}
+/**
+ * @param {string} s
+ * @return {number}
+ */
+var myAtoi = function(s) {
+    let sign = null
+    let num = null
+
+    for(let i = 0; i < s.length; i++) {
+      const c = s[i]
+
+      // begin number
+      if (num === null && sign === null)  {
+        if (c === " ") {
+          continue
+        } 
+        
+        if (c === "-") {
+          sign = -1
+          continue
+        } 
+
+        if (c === "+") {
+          sign = 1
+          continue
+        }
+      }
+
+      // end number
+      if (!/[0-9]/.test(c)) {
+        break
+      }
+
+      // out of range
+      const n = +c
+
+      const boundry = sign === -1 ? 2147483648 : 2147483647
+      if (num > (boundry - n)/10) {
+        num = boundry
+        break
+      }
+
+      num = (num || 0) * 10 + (+c)
+    }
+
+    return num !== null ? num * (sign || 1) : 0
+};
+
+console.log(myAtoi("   -42"))
+console.log(myAtoi("4193 with words"))
+```
+
+## Complexity Analysis
+
+* Time Complexity: O(n)       
+* Space Complexity: O(1)

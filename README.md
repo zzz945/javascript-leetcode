@@ -11,3 +11,7 @@
 [5.Longest Palidromic Substring](https://zzz945.github.io/javascript-leetcode/5.Longest_Palindromic_Substring/)
 
 [6.Zigzag Conversion](https://zzz945.github.io/javascript-leetcode/6.Zigzag_Conversion)
+
+[7.Reverse Integer](https://zzz945.github.io/javascript-leetcode/7.Reverse_Integer)
+
+[8.String To Integer(atoi)](https://zzz945.github.io/javascript-leetcode/8.String_to_Integer(atoi))

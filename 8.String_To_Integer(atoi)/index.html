@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>index.knit</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; } /* Alert */
+code span.an { color: #008000; } /* Annotation */
+code span.at { } /* Attribute */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #0000ff; } /* ControlFlow */
+code span.ch { color: #008080; } /* Char */
+code span.cn { } /* Constant */
+code span.co { color: #008000; } /* Comment */
+code span.cv { color: #008000; } /* CommentVar */
+code span.do { color: #008000; } /* Documentation */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.im { } /* Import */
+code span.in { color: #008000; } /* Information */
+code span.kw { color: #0000ff; } /* Keyword */
+code span.op { } /* Operator */
+code span.ot { color: #ff4000; } /* Other */
+code span.pp { color: #ff4000; } /* Preprocessor */
+code span.sc { color: #008080; } /* SpecialChar */
+code span.ss { color: #008080; } /* SpecialString */
+code span.st { color: #008080; } /* String */
+code span.va { } /* Variable */
+code span.vs { color: #008080; } /* VerbatimString */
+code span.wa { color: #008000; font-weight: bold; } /* Warning */
+  </style>
+
+
+  <script src="data:application/javascript;base64,Ly8gUGFuZG9jIDIuOSBhZGRzIGF0dHJpYnV0ZXMgb24gYm90aCBoZWFkZXIgYW5kIGRpdi4gV2UgcmVtb3ZlIHRoZSBmb3JtZXIgKHRvCi8vIGJlIGNvbXBhdGlibGUgd2l0aCB0aGUgYmVoYXZpb3Igb2YgUGFuZG9jIDwgMi44KS4KZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcignRE9NQ29udGVudExvYWRlZCcsIGZ1bmN0aW9uKGUpIHsKICB2YXIgaHMgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCJkaXYuc2VjdGlvbltjbGFzcyo9J2xldmVsJ10gPiA6Zmlyc3QtY2hpbGQiKTsKICB2YXIgaSwgaCwgYTsKICBmb3IgKGkgPSAwOyBpIDwgaHMubGVuZ3RoOyBpKyspIHsKICAgIGggPSBoc1tpXTsKICAgIGlmICghL15oWzEtNl0kL2kudGVzdChoLnRhZ05hbWUpKSBjb250aW51ZTsgIC8vIGl0IHNob3VsZCBiZSBhIGhlYWRlciBoMS1oNgogICAgYSA9IGguYXR0cmlidXRlczsKICAgIHdoaWxlIChhLmxlbmd0aCA+IDApIGgucmVtb3ZlQXR0cmlidXRlKGFbMF0ubmFtZSk7CiAgfQp9KTsK"></script>
+  <link href="data:text/css,%3Aroot%20%7B%0A%2D%2Dfont%2Dmonospace%3A%20%27Source%20Code%20Pro%27%2C%20%27Fira%20Code%27%2C%20%27Consolas%27%2C%20%27Monaco%27%2C%20monospace%3B%0A%2D%2Dfont%2Dbody%3A%20%27Lato%27%2C%20%2Dapple%2Dsystem%2C%20BlinkMacSystemFont%2C%20%22Segoe%20UI%22%2C%20Roboto%2C%20Oxygen%2DSans%2C%20Ubuntu%2C%20Cantarell%2C%20%22Helvetica%20Neue%22%2C%20sans%2Dserif%3B%0A%2D%2Dfont%2Dheader%3A%20%27Nunito%20Sans%27%2C%20apple%2Dsystem%2C%20BlinkMacSystemFont%2C%20%22Segoe%20UI%22%2C%20Roboto%2C%20Oxygen%2DSans%2C%20Ubuntu%2C%20Cantarell%2C%20%22Helvetica%20Neue%22%2C%20sans%2Dserif%3B%0A%7D%0A" rel="stylesheet" />
+  <link href="data:text/css,%3Aroot%20%7B%0A%2D%2Dtext%3A%20%232f4858%3B%0A%2D%2Dtext%2Dmed%3A%20%236d7e8a%3B%0A%2D%2Dtext%2Dlight%3A%20%23c0c8cc%3B%0A%2D%2Dtext%2Dlighter%3A%20%23eaecee%3B%0A%2D%2Dborder%2Dradius%3A%203px%3B%0A%2D%2Ddark%2Dred%3A%20%239a2e36%3B%0A%2D%2Dred%3A%20%23d33f49%3B%0A%2D%2Dlight%2Dred%3A%20%23e3848b%3B%0A%2D%2Dorange%3A%20%23ff6300%3B%0A%2D%2Dgold%3A%20%23c0af3f%3B%0A%2D%2Dyellow%3A%20%23f0db4f%3B%0A%2D%2Dlight%2Dyellow%3A%20%23f6e995%3B%0A%2D%2Dpurple%3A%20%23993d70%3B%0A%2D%2Dlight%2Dpurple%3A%20%23b7779a%3B%0A%2D%2Ddark%2Dpink%3A%20%23b24e72%3B%0A%2D%2Dhot%2Dpink%3A%20%23ff41b4%3B%0A%2D%2Dpink%3A%20%23ff70a3%3B%0A%2D%2Dlight%2Dpink%3A%20%23ffc5da%3B%0A%2D%2Ddark%2Dgreen%3A%20%23338d70%3B%0A%2D%2Dgreen%3A%20%2344bc96%3B%0A%2D%2Dlight%2Dgreen%3A%20%2355ebbc%3B%0A%2D%2Dnavy%3A%20%23001b44%3B%0A%2D%2Ddark%2Dblue%3A%20%23466683%3B%0A%2D%2Dblue%3A%20%234d8dc9%3B%0A%2D%2Dlight%2Dblue%3A%20%2375aadb%3B%0A%2D%2Dlightest%2Dblue%3A%20%23bad4ed%3B%0A%2D%2Dwashed%2Dblue%3A%20%23f8fafd%3B%0A%2D%2Dwashed%2Dgreen%3A%20%23ecf8f4%3B%0A%2D%2Dwashed%2Dyellow%3A%20%23fefcf4%3B%0A%2D%2Dwashed%2Dred%3A%20%23fcf4f5%3B%0A%2D%2Dwashed%2Dpurple%3A%20%23faf7f9%3B%0A%7D%0A" rel="stylesheet" />
+  <link href="data:text/css,body%20%7B%0Afont%2Dfamily%3A%20var%28%2D%2Dfont%2Dbody%29%3B%0Aline%2Dheight%3A%201%2E5%3B%0Afont%2Dsize%3A%201em%3B%0Acolor%3A%20var%28%2D%2Dtext%29%3B%0Amargin%3A%2010px%3B%0A%2Dwebkit%2Dtext%2Dsize%2Dadjust%3A%20100%25%3B%0A%7D%0A%0Ah1%2C%0Ah2%2C%0Ah3%2C%0Ah4%2C%0Ah5%2C%0Ah6%20%7B%0Afont%2Dfamily%3A%20var%28%2D%2Dfont%2Dheader%29%3B%0Amargin%3A%200%2E67em%200%200%2E33em%200%3B%0A%7D%0Ah1%20%7B%0Afont%2Dsize%3A%202em%3B%0Aline%2Dheight%3A%201%2E25%3B%0A%7D%0A%40media%20%28min%2Dwidth%3A%2043%2E75em%29%20%7B%0Ah1%20%7B%0Afont%2Dsize%3A%202%2E5em%3B%0Aline%2Dheight%3A%201%2E125%3B%0A%7D%0A%7D%0A%40media%20%28min%2Dwidth%3A%2056%2E25em%29%20%7B%0Ah1%20%7B%0Afont%2Dsize%3A%203em%3B%0Aline%2Dheight%3A%201%2E05%3B%0A%7D%0A%7D%0Ah2%20%7B%0Afont%2Dsize%3A%201%2E625em%3B%0Aline%2Dheight%3A%201%2E15384615%3B%0A%7D%0A%40media%20%28min%2Dwidth%3A%2043%2E75em%29%20%7B%0Ah2%20%7B%0Afont%2Dsize%3A%202em%3B%0Aline%2Dheight%3A%201%2E25%3B%0A%7D%0A%7D%0A%40media%20%28min%2Dwidth%3A%2056%2E25em%29%20%7B%0Ah2%20%7B%0Afont%2Dsize%3A%202%2E25em%3B%0Aline%2Dheight%3A%201%2E25%3B%0A%7D%0A%7D%0Ah3%20%7B%0Afont%2Dsize%3A%201%2E375em%3B%0Aline%2Dheight%3A%201%2E13636364%3B%0A%7D%0A%40media%20%28min%2Dwidth%3A%2043%2E75em%29%20%7B%0Ah3%20%7B%0Afont%2Dsize%3A%201%2E5em%3B%0Aline%2Dheight%3A%201%2E25%3B%0A%7D%0A%7D%0A%40media%20%28min%2Dwidth%3A%2056%2E25em%29%20%7B%0Ah3%20%7B%0Afont%2Dsize%3A%201%2E75em%3B%0Aline%2Dheight%3A%201%2E25%3B%0A%7D%0A%7D%0Ah4%20%7B%0Afont%2Dsize%3A%201%2E125em%3B%0Aline%2Dheight%3A%201%2E11111111%3B%0A%7D%0A%40media%20%28min%2Dwidth%3A%2043%2E75em%29%20%7B%0Ah4%20%7B%0Aline%2Dheight%3A%201%2E22222222%3B%0A%7D%0A%7D%0Ah5%20%7B%0Afont%2Dsize%3A%201%2E1em%3B%0Aline%2Dheight%3A%201%2E11111111%3B%0A%7D%0A%40media%20%28min%2Dwidth%3A%2043%2E75em%29%20%7B%0Ah5%20%7B%0Aline%2Dheight%3A%201%2E22222222%3B%0A%7D%0A%7D%0Ah6%20%7B%0Afont%2Dsize%3A%201em%3B%0Aline%2Dheight%3A%201%2E11111111%3B%0A%7D%0A%40media%20%28min%2Dwidth%3A%2043%2E75em%29%20%7B%0Ah6%20%7B%0Aline%2Dheight%3A%201%2E22222222%3B%0A%7D%0A%7D%0A%0Aa%20%7B%0Acolor%3A%20var%28%2D%2Dblue%29%3B%0Abackground%2Dcolor%3A%20transparent%3B%0Atext%2Ddecoration%3A%20none%3B%0A%7D%0Aa%3Avisited%20%7B%0Acolor%3A%20var%28%2D%2Ddark%2Dblue%29%3B%0A%7D%0A%0Anav%20%7B%0Abackground%2Dcolor%3A%20var%28%2D%2Dtext%2Dlighter%29%3B%0Apadding%3A%201em%3B%0Amargin%3A%20%2D10px%3B%0A%7D%0Anav%20a%20%7B%0Apadding%3A%200%2E5em%3B%0Aborder%2Dradius%3A%20var%28%2D%2Dborder%2Dradius%29%3B%0Atext%2Ddecoration%3A%20none%3B%0Acolor%3A%20var%28%2D%2Dtext%2Dmed%29%3B%0A%7D%0Anav%20a%3Ahover%20%7B%0Acolor%3A%20var%28%2D%2Dred%29%3B%0A%7D%0A%0Ahr%20%7B%0Aborder%3A%201px%20solid%20var%28%2D%2Dtext%2Dmed%29%3B%0Aborder%2Dbottom%3A%200px%3B%0Aheight%3A%200px%3B%0A%7D%0A%0Ap%20%7B%0Amargin%3A%201em%200%3B%0A%7D%0Amark%20%7B%0Abackground%2Dcolor%3A%20var%28%2D%2Dyellow%29%3B%0Acolor%3A%20%23333333%3B%0A%7D%0Asmall%20%7B%0Afont%2Dsize%3A%2080%25%3B%0A%7D%0Asub%2C%0Asup%20%7B%0Afont%2Dsize%3A%2075%25%3B%0A%7D%0A%0Ablockquote%20%7B%0Aborder%2Dleft%3A%204px%20solid%20var%28%2D%2Dtext%2Dlight%29%3B%0Amargin%3A%201em%200%3B%0Apadding%3A%200%2E6em%201em%3B%0A%7D%0A%0Aul%2C%0Aol%20%7B%0Apadding%2Dleft%3A%202em%3B%0A%7D%0Aul%20li%2C%0Aol%20li%20%7B%0Aline%2Dheight%3A%201%2E75%3B%0A%7D%0A%0Afieldset%20%7B%0Aborder%3A%201px%20solid%20var%28%2D%2Dtext%29%3B%0Aborder%2Dradius%3A%20var%28%2D%2Dborder%2Dradius%29%3B%0A%7D%0Aselect%20%7B%0A%2Dwebkit%2Dappearance%3A%20none%3B%0A%2Dmoz%2Dappearance%3A%20none%3B%0Aappearance%3A%20none%3B%0Abackground%3A%20transparent%3B%0Abackground%2Dimage%3A%20url%28%22data%3Aimage%2Fsvg%2Bxml%3Butf8%2C%20%3Csvg%20fill%3D%27black%27%20height%3D%2724%27%20viewBox%3D%270%200%2024%2024%27%20width%3D%2724%27%20xmlns%3D%27http%3A%2F%2Fwww%2Ew3%2Eorg%2F2000%2Fsvg%27%3E%3Cpath%20d%3D%27M7%2010l5%205%205%2D5z%27%2F%3E%3Cpath%20d%3D%27M00h24v24H0z%27%20fill%3D%27none%27%2F%3E%3C%2Fsvg%3E%22%29%3B%0Abackground%2Drepeat%3A%20no%2Drepeat%3B%0Abackground%2Dposition%2Dx%3A%20100%25%3B%0Abackground%2Dposition%2Dy%3A%2050%25%3B%0A%7D%0Abutton%2C%0Ainput%2C%0Aselect%2C%0Atextarea%2C%0Aa%5Brole%3D%22button%22%5D%20%7B%0Afont%2Dfamily%3A%20inherit%3B%0Afont%2Dsize%3A%20100%25%3B%0Aline%2Dheight%3A%201%2E5%3B%0Amargin%3A%200%3B%0Apadding%3A%200%2E33em%3B%0Aborder%3A%201px%20solid%20var%28%2D%2Dtext%2Dlight%29%3B%0Aborder%2Dradius%3A%20var%28%2D%2Dborder%2Dradius%29%3B%0Abox%2Dsizing%3A%20border%2Dbox%3B%0A%7D%0Ainput%5Btype%3D%22checkbox%22%5D%2C%0Ainput%5Btype%3D%22radio%22%5D%20%7B%0Aborder%3A%20none%3B%0Aborder%3A%200%3B%0A%7D%0Abutton%2C%0Ainput%5Btype%3D%22button%22%5D%2C%0Ainput%5Btype%3D%22submit%22%5D%2C%0Aa%5Brole%3D%22button%22%5D%20%7B%0Apadding%3A%200%2E33em%200%2E66em%3B%0Acursor%3A%20pointer%3B%0Abackground%2Dcolor%3A%20var%28%2D%2Dtext%2Dlighter%29%3B%0Acolor%3A%20var%28%2D%2Dtext%29%3B%0Atext%2Ddecoration%3A%20none%3B%0A%7D%0Abutton%3Ahover%2C%0Ainput%5Btype%3D%22button%22%5D%3Ahover%2C%0Ainput%5Btype%3D%22submit%22%5D%3Ahover%2C%0Aa%5Brole%3D%22button%22%5D%3Ahover%20%7B%0Abackground%2Dcolor%3A%20var%28%2D%2Dtext%2Dlight%29%3B%0A%7D%0Aa%5Brole%3D%22button%22%5D%20%7B%0Apadding%3A%200%2E5em%200%2E66em%3B%0A%7D%0Abutton%3Adisabled%2C%0Ainput%5Btype%3D%22button%22%5D%3Adisabled%2C%0Ainput%5Btype%3D%22submit%22%5D%3Adisabled%2C%0Aa%5Brole%3D%22button%22%5D%3Adisabled%20%7B%0Abackground%2Dcolor%3A%20var%28%2D%2Dtext%2Dlighter%29%3B%0Acolor%3A%20var%28%2D%2Dtext%2Dlight%29%3B%0Acursor%3A%20not%2Dallowed%3B%0A%7D%0A%0Aprogress%5Bvalue%5D%20%7B%0A%2Dwebkit%2Dappearance%3A%20none%3B%0A%2Dmoz%2Dappearance%3A%20none%3B%0Aappearance%3A%20none%3B%0Avertical%2Dalign%3A%20middle%3B%0Aborder%3A%20none%3B%0Awidth%3A%2015em%3B%0Aheight%3A%200%2E75em%3B%0Abackground%2Dcolor%3A%20var%28%2D%2Dtext%2Dlight%29%3B%0Acolor%3A%20var%28%2D%2Dblue%29%3B%0A%7D%0Aprogress%5Bvalue%5D%3A%3A%2Dwebkit%2Dprogress%2Dbar%20%7B%0Abackground%2Dcolor%3A%20var%28%2D%2Dtext%2Dlight%29%3B%0A%7D%0Aprogress%5Bvalue%5D%3A%3A%2Dwebkit%2Dprogress%2Dvalue%20%7B%0Abackground%2Dcolor%3A%20var%28%2D%2Dblue%29%3B%0A%7D%0A" rel="stylesheet" />
+  <link href="data:text/css,%0A%0Atable%20%7B%0Aborder%2Dcollapse%3A%20collapse%3B%0A%7D%0Atable%2C%0Atable%20th%2C%0Atable%20td%20%7B%0Aborder%2Dbottom%3A%201px%20solid%20var%28%2D%2Dtext%2Dlight%29%3B%0Apadding%3A%200%2E33em%200%2E66em%3B%0Atext%2Dalign%3A%20left%3B%0Avertical%2Dalign%3A%20middle%3B%0A%7D%0Atable%5Bborder%3D%221%22%5D%2C%0Atable%5Bborder%3D%221%22%5D%20th%2C%0Atable%5Bborder%3D%221%22%5D%20td%20%7B%0Aborder%3A%201px%20solid%20var%28%2D%2Dtext%2Dlight%29%3B%0A%7D%0A" rel="stylesheet" />
+  <link href="data:text/css,%0A%0A%2Eleft%20%7B%0Afloat%3A%20left%3B%0A%7D%0A%2Eright%20%7B%0Afloat%3A%20right%3B%0A%7D%0A%2Ecenter%20%7B%0Atext%2Dalign%3A%20center%3B%0A%7D%0A%2Eclear%20%7B%0Aclear%3A%20both%3B%0A%7D%0A%2Ehide%20%7B%0Adisplay%3A%20none%3B%0A%7D%0A%2Espacer%20%7B%0Adisplay%3A%20block%3B%0Aheight%3A%201em%3B%0Aborder%3A%20none%3B%0Aclear%3A%20both%3B%0A%7D%0A%2Ewrap%20%7B%0Awidth%3A%20100%25%3B%0Amax%2Dwidth%3A%2040em%3B%0Amargin%3A%20auto%3B%0A%7D%0A%2Ereset%20%7B%0Afont%3A%20inherit%3B%0Afont%2Dsize%3A%20100%25%3B%0Amargin%3A%200%3B%0Apadding%3A%200%3B%0Aborder%3A%200%3B%0Atext%2Ddecoration%3A%20none%3B%0A%7D%0Aol%2Ereset%2C%0Aul%2Ereset%20%7B%0Alist%2Dstyle%3A%20none%3B%0A%7D%0A%0A%3A%3A%2Dmoz%2Dselection%20%7B%0Abackground%2Dcolor%3A%20rgba%2885%2C%20235%2C%20188%2C%200%2E6%29%3B%0A%7D%0A%3A%3Aselection%20%7B%0Abackground%2Dcolor%3A%20rgba%2885%2C%20235%2C%20188%2C%200%2E6%29%3B%0A%7D%0A%0Akbd%20%7B%0Apadding%3A%200%2E1em%200%2E6em%3B%0Aborder%3A%201px%20solid%20var%28%2D%2Dtext%2Dlighter%29%3B%0Afont%2Dfamily%3A%20var%28%2D%2Dfont%2Dmonospace%29%3B%0Abackground%2Dcolor%3A%20var%28%2D%2Dtext%2Dlighter%29%3B%0Acolor%3A%20var%28%2D%2Dtext%29%3B%0A%2Dwebkit%2Dbox%2Dshadow%3A%200%201px%200px%20rgba%280%2C%200%2C%200%2C%200%2E2%29%2C%200%200%200%201px%20%23fff%20inset%3B%0Abox%2Dshadow%3A%200%201px%200px%202px%20rgba%280%2C%200%2C%200%2C%200%2E2%29%2C%200%200%200%201px%20%23fff%20inset%3B%0A%2Dmoz%2Dborder%2Dradius%3A%203px%3B%0A%2Dwebkit%2Dborder%2Dradius%3A%203px%3B%0Aborder%2Dradius%3A%203px%3B%0Adisplay%3A%20inline%2Dblock%3B%0Amargin%3A%200%200%2E1em%3B%0Aline%2Dheight%3A%201%2E4%3B%0Awhite%2Dspace%3A%20nowrap%3B%0A%7D%0A" rel="stylesheet" />
+  <link href="data:text/css,pre%20%7B%0Afont%2Dfamily%3A%20var%28%2D%2Dfont%2Dmonospace%29%3B%0Apadding%3A%200%2E8em%3B%0Aposition%3A%20relative%3B%0Afont%2Dsize%3A%201rem%3B%0Aline%2Dheight%3A%201%2E2em%3B%0Awhite%2Dspace%3A%20pre%2Dwrap%3B%0Aword%2Dwrap%3A%20break%2Dword%3B%0Aborder%2Dleft%3A%203px%20solid%20var%28%2D%2Dtext%2Dlighter%29%3B%0A%7D%0Apre%20code%20%7B%0Aborder%3A%20none%3B%0Acolor%3A%20var%28%2D%2Dtext%29%3B%0A%7D%0Apre%3A%3Aafter%20%7B%0Aposition%3A%20absolute%3B%0Abottom%3A%205px%3B%0Aright%3A%205px%3B%0Aopacity%3A%200%2E5%3B%0A%7D%0Apre%2Ejs%20%7B%0Aborder%2Dcolor%3A%20var%28%2D%2Dyellow%29%3B%0A%7D%0Apre%2Ejs%3A%3Aafter%20%7B%0Acontent%3A%20%27js%27%3B%0Acolor%3A%20var%28%2D%2Dyellow%29%3B%0Aopacity%3A%201%3B%0A%7D%0Apre%2Er%20%7B%0Aborder%2Dcolor%3A%20var%28%2D%2Dblue%29%3B%0A%7D%0Apre%2Er%3A%3Aafter%20%7B%0Acontent%3A%20%27r%27%3B%0Acolor%3A%20var%28%2D%2Dblue%29%3B%0A%7D%0Apre%2Ejson%20%7B%0Aborder%2Dcolor%3A%20var%28%2D%2Dpurple%29%3B%0A%7D%0Apre%2Ejson%3A%3Aafter%20%7B%0Acontent%3A%20%27json%27%3B%0Acolor%3A%20var%28%2D%2Dpurple%29%3B%0A%7D%0Apre%2Enode%2C%0Apre%2Ebash%2C%0Apre%2Esh%20%7B%0Aborder%2Dcolor%3A%20var%28%2D%2Dgreen%29%3B%0A%7D%0Apre%2Enode%3A%3Aafter%20%7B%0Acontent%3A%20%27node%27%3B%0Acolor%3A%20var%28%2D%2Dgreen%29%3B%0Aopacity%3A%201%3B%0A%7D%0Apre%2Ebash%3A%3Aafter%2C%0Apre%2Esh%3A%3Aafter%20%7B%0Acontent%3A%20%27sh%27%3B%0Acolor%3A%20var%28%2D%2Dgreen%29%3B%0Aopacity%3A%201%3B%0A%7D%0Apre%2Emd%2C%0Apre%2Emarkdown%2C%0Apre%2Eyaml%20%7B%0Aborder%2Dcolor%3A%20var%28%2D%2Dred%29%3B%0A%7D%0Apre%2Eyaml%3A%3Aafter%20%7B%0Acontent%3A%20%27yaml%27%3B%0Acolor%3A%20var%28%2D%2Dred%29%3B%0A%7D%0Apre%2Emarkdown%3A%3Aafter%2C%0Apre%2Emd%3A%3Aafter%20%7B%0Acontent%3A%20%27md%27%3B%0Acolor%3A%20var%28%2D%2Dred%29%3B%0A%7D%0Apre%2Ehtml%20%7B%0Aborder%2Dcolor%3A%20%23E34C26%3B%0A%7D%0Apre%2Ehtml%3A%3Aafter%20%7B%0Acontent%3A%20%27html%27%3B%0Acolor%3A%20%23E34C26%3B%0A%7D%0Apre%2Ecss%20%7B%0Aborder%2Dcolor%3A%20%23264DE4%3B%0Aposition%3A%20relative%3B%0A%7D%0Apre%2Ecss%3A%3Aafter%20%7B%0Acontent%3A%20%27css%27%3B%0Acolor%3A%20%23264de4%3B%0A%7D%0A%2Epre%2Dname%20%7B%0Amargin%2Dbottom%3A%20%2D1em%3B%0Aborder%2Dbottom%3A%203px%20solid%20%2300000010%3B%0Afont%2Dfamily%3A%20var%28%2D%2Dfont%2Dmonospace%29%3B%0Atext%2Dalign%3A%20right%3B%0Apadding%2Dright%3A%201em%3B%0Acolor%3A%20var%28%2D%2Dtext%2Dmed%29%3B%0Az%2Dindex%3A%20%2D1%3B%0A%7D%0Ap%20code%2C%0Ap%20kbd%2C%0Ap%20samp%20%7B%0Afont%2Dfamily%3A%20var%28%2D%2Dfont%2Dmonospace%29%3B%0Afont%2Dsize%3A%201rem%3B%0A%7D%0Ap%20code%2C%0Ap%20kbd%20%7B%0Aborder%2Dradius%3A%20var%28%2D%2Dborder%2Dradius%29%3B%0Apadding%3A%200px%202px%3B%0A%7D%0Ap%20code%20%7B%0Acolor%3A%20var%28%2D%2Ddark%2Dred%29%3B%0A%7D%0Apre%2Er%2C%0Apre%2Ejs%2C%0Apre%2Emd%2C%0Apre%2Emarkdown%2C%0Apre%2Eyaml%2C%0Apre%2Ejson%2C%0Apre%2Ebash%2C%0Apre%2Ehtml%2C%0Apre%2Ecss%20%7B%0Abackground%3A%20none%3B%0A%7D%0Apre%2Er%3A%3Aafter%2C%0Apre%2Ejs%3A%3Aafter%2C%0Apre%2Emd%3A%3Aafter%2C%0Apre%2Emarkdown%3A%3Aafter%2C%0Apre%2Eyaml%3A%3Aafter%2C%0Apre%2Ejson%3A%3Aafter%2C%0Apre%2Ebash%3A%3Aafter%2C%0Apre%2Ehtml%3A%3Aafter%2C%0Apre%2Ecss%3A%3Aafter%20%7B%0Atext%2Dtransform%3A%20uppercase%3B%0Afont%2Dfamily%3A%20var%28%2D%2Dfont%2Dheader%29%3B%0Aleft%3A%20%2D1%2E35em%3B%0Abottom%3A%20%2D1%2E1em%3B%0Atransform%2Dorigin%3A%20top%20left%3B%0Atransform%3A%20rotate%28%2D90deg%29%3B%0A%7D%0Apre%2Epre%2Dhide%2Dfiletype%2C%0A%2Epre%2Dhide%2Dfiletype%20pre%3A%3Aafter%20%7B%0Acontent%3A%20%27%27%3B%0A%7D%0Apre%2Epre%2Dhide%2Dborder%2C%0A%2Epre%2Dhide%2Dborder%20pre%20%7B%0Aborder%2Dcolor%3A%20transparent%3B%0A%7D%0Adiv%2EsourceCode%20%7B%0Aoverflow%3A%20visible%3B%0A%7D%0Apre%20%3E%20code%2EsourceCode%20%7B%0Awhite%2Dspace%3A%20pre%3B%0Aposition%3A%20relative%3B%0Aoverflow%3A%20auto%3B%0Amax%2Dwidth%3A%20100%25%3B%0Adisplay%3A%20inline%2Dblock%3B%0A%7D%0A%0Adiv%5Bid%5E%3D%22out%2D%22%5D%20%3E%20pre%3Aempty%20%7B%0Adisplay%3A%20none%3B%0A%7D%0A" rel="stylesheet" />
+  <link href="data:text/css,pre%2EnumberSource%20%7B%0Aborder%2Dwidth%3A%203px%3B%0Amargin%2Dleft%3A%200%3B%0A%7D%0Apre%2EnumberSource%20code%20%3E%20span%20%3E%20a%3Afirst%2Dchild%3Abefore%20%7B%0Aleft%3A%20%2D1em%3B%0A%7D%0Acode%2EsourceCode%20%3E%20span%20%3E%20a%3Afirst%2Dchild%3Abefore%20%7B%0Atext%2Ddecoration%3A%20none%3B%0A%7D%0A" rel="stylesheet" />
+  <link href="data:text/css,%2Ejv%5F%5Fline%20%7B%0Amargin%3A%204px%200%3B%0Adisplay%3A%20flex%3B%0Ajustify%2Dcontent%3A%20flex%2Dstart%3B%0A%7D%0A%2Ejv%5F%5Fcaret%2Dicon%20%7B%0Awidth%3A%2018px%3B%0Atext%2Dalign%3A%20center%3B%0Acursor%3A%20pointer%3B%0Afont%2Dsize%3A%201%2E8em%3B%0Aline%2Dheight%3A%200%2E7%3B%0A%7D%0A%2Ejv%5F%5Fcaret%2Dicon%20%2Ejv%5F%5Fcaret%2Ddown%3A%3Abefore%20%7B%0Acontent%3A%20%22%5C25BE%22%3B%0A%7D%0A%2Ejv%5F%5Fcaret%2Dicon%20%2Ejv%5F%5Fcaret%2Dright%3A%3Abefore%20%7B%0Acontent%3A%20%22%5C25B8%22%3B%0A%7D%0A%2Ejv%5F%5Fempty%2Dicon%20%7B%0Awidth%3A%2018px%3B%0A%7D%0A%2Ejv%5F%5Fjson%2Dtype%20%7B%0Amargin%2Dright%3A%204px%3B%0Amargin%2Dleft%3A%204px%3B%0A%7D%0A%2Ejv%5F%5Fjson%2Dkey%20%7B%0Acolor%3A%20%23444%3B%0Amargin%2Dright%3A%204px%3B%0Amargin%2Dleft%3A%204px%3B%0A%7D%0A%2Ejv%5F%5Fjson%2Dindex%20%7B%0Amargin%2Dright%3A%204px%3B%0Amargin%2Dleft%3A%204px%3B%0A%7D%0A%2Ejv%5F%5Fjson%2Dseparator%20%7B%0A%7D%0A%2Ejv%5F%5Fjson%2Dvalue%20%7B%0Amargin%2Dleft%3A%208px%3B%0A%7D%0A%2Ejv%5F%5Fjson%2Dnumber%20%7B%0Acolor%3A%20%23f9ae58%3B%0A%7D%0A%2Ejv%5F%5Fjson%2Dboolean%20%7B%0Acolor%3A%20%23ec5f66%3B%0A%7D%0A%2Ejv%5F%5Fjson%2Dstring%20%7B%0Acolor%3A%20%2386b25c%3B%0A%7D%0A%2Ejv%5F%5Fjson%2Dsize%20%7B%0Amargin%2Dright%3A%204px%3B%0Amargin%2Dleft%3A%204px%3B%0A%7D%0A%2Ejv%5F%5Fhide%20%7B%0Adisplay%3A%20none%3B%0A%7D%0A" rel="stylesheet" />
+  <script src="data:application/javascript;base64,IWZ1bmN0aW9uKCl7InVzZSBzdHJpY3QiO2Z1bmN0aW9uIGNyZWF0ZUVsZW1lbnQodHlwZSxjb25maWcpe2NvbnN0IGh0bWxFbGVtZW50PWRvY3VtZW50LmNyZWF0ZUVsZW1lbnQodHlwZSk7cmV0dXJuIHZvaWQgMD09PWNvbmZpZz9odG1sRWxlbWVudDooY29uZmlnLmNsYXNzTmFtZSYmKGh0bWxFbGVtZW50LmNsYXNzTmFtZT1jb25maWcuY2xhc3NOYW1lKSxjb25maWcuY29udGVudCYmKGh0bWxFbGVtZW50LnRleHRDb250ZW50PWNvbmZpZy5jb250ZW50KSxjb25maWcuY2hpbGRyZW4mJmNvbmZpZy5jaGlsZHJlbi5mb3JFYWNoKGVsPT57bnVsbCE9PWVsJiZodG1sRWxlbWVudC5hcHBlbmRDaGlsZChlbCl9KSxodG1sRWxlbWVudCl9ZnVuY3Rpb24gY3JlYXRlRXhwYW5kZWRFbGVtZW50KG5vZGUpe2NvbnN0IGlFbGVtPWNyZWF0ZUVsZW1lbnQoInNwYW4iKTtub2RlLmV4cGFuZGVkP2lFbGVtLmNsYXNzTmFtZT0ianZfX2NhcmV0IGp2X19jYXJldC1kb3duIjppRWxlbS5jbGFzc05hbWU9Imp2X19jYXJldCBqdl9fY2FyZXQtcmlnaHQiO2NvbnN0IGNhcmV0RWxlbT1jcmVhdGVFbGVtZW50KCJkaXYiLHtjbGFzc05hbWU6Imp2X19jYXJldC1pY29uIixjaGlsZHJlbjpbaUVsZW1dfSksaGFuZGxlQ2xpY2s9bm9kZS50b2dnbGUuYmluZChub2RlKTtjYXJldEVsZW0uYWRkRXZlbnRMaXN0ZW5lcigiY2xpY2siLGhhbmRsZUNsaWNrKTtjb25zdCBpbmRleEVsZW09Y3JlYXRlRWxlbWVudCgiZGl2Iix7Y2xhc3NOYW1lOiJqdl9fanNvbi1pbmRleCIsY29udGVudDpub2RlLmtleX0pLHR5cGVFbGVtPWNyZWF0ZUVsZW1lbnQoImRpdiIse2NsYXNzTmFtZToianZfX2pzb24tdHlwZSIsY29udGVudDpub2RlLnR5cGV9KSxrZXlFbGVtPWNyZWF0ZUVsZW1lbnQoImRpdiIse2NsYXNzTmFtZToianZfX2pzb24ta2V5Iixjb250ZW50Om5vZGUua2V5fSksc2l6ZUVsZW09Y3JlYXRlRWxlbWVudCgiZGl2Iix7Y2xhc3NOYW1lOiJqdl9fanNvbi1zaXplIn0pO2xldCBsaW5lQ2hpbGRyZW47ImFycmF5Ij09PW5vZGUudHlwZT9zaXplRWxlbS5pbm5lclRleHQ9IlsiK25vZGUuY2hpbGRyZW4ubGVuZ3RoKyJdIjoib2JqZWN0Ij09PW5vZGUudHlwZSYmKHNpemVFbGVtLmlubmVyVGV4dD0ieyIrbm9kZS5jaGlsZHJlbi5sZW5ndGgrIn0iKTtjb25zdCBsaW5lRWxlbT1jcmVhdGVFbGVtZW50KCJkaXYiLHtjbGFzc05hbWU6Imp2X19saW5lIixjaGlsZHJlbjpsaW5lQ2hpbGRyZW49bnVsbD09PW5vZGUua2V5P1tjYXJldEVsZW0sdHlwZUVsZW0sc2l6ZUVsZW1dOiJhcnJheSI9PT1ub2RlLnBhcmVudC50eXBlP1tjYXJldEVsZW0saW5kZXhFbGVtLHNpemVFbGVtXTpbY2FyZXRFbGVtLGtleUVsZW0sc2l6ZUVsZW1dfSk7cmV0dXJuIG5vZGUuZGVwdGg+MCYmKGxpbmVFbGVtLnN0eWxlPSJtYXJnaW4tbGVmdDogIisyNCpub2RlLmRlcHRoKyJweDsiKSxsaW5lRWxlbX1mdW5jdGlvbiBjcmVhdGVOb3RFeHBhbmRlZEVsZW1lbnQobm9kZSl7Y29uc3QgY2FyZXRFbGVtPWNyZWF0ZUVsZW1lbnQoImRpdiIse2NsYXNzTmFtZToianZfX2VtcHR5LWljb24ifSksa2V5RWxlbT1jcmVhdGVFbGVtZW50KCJkaXYiLHtjbGFzc05hbWU6Imp2X19qc29uLWtleSIsY29udGVudDpub2RlLmtleX0pLHNlcGFyYXRvckVsZW1lbnQ9Y3JlYXRlRWxlbWVudCgiZGl2Iix7Y2xhc3NOYW1lOiJqdl9fanNvbi1zZXBhcmF0b3IiLGNvbnRlbnQ6IjoifSksdmFsdWVFbGVtZW50PWNyZWF0ZUVsZW1lbnQoImRpdiIse2NsYXNzTmFtZToianZfX2pzb24tdmFsdWUiKygiIGp2X19qc29uLSIrdHlwZW9mIG5vZGUudmFsdWUpLGNvbnRlbnQ6U3RyaW5nKG5vZGUudmFsdWUpfSksbGluZUVsZW09Y3JlYXRlRWxlbWVudCgiZGl2Iix7Y2xhc3NOYW1lOiJqdl9fbGluZSIsY2hpbGRyZW46W2NhcmV0RWxlbSxrZXlFbGVtLHNlcGFyYXRvckVsZW1lbnQsdmFsdWVFbGVtZW50XX0pO3JldHVybiBub2RlLmRlcHRoPjAmJihsaW5lRWxlbS5zdHlsZT0ibWFyZ2luLWxlZnQ6ICIrMjQqbm9kZS5kZXB0aCsicHg7IiksbGluZUVsZW19ZnVuY3Rpb24gY3JlYXRlTm9kZSgpe3JldHVybntrZXk6bnVsbCxwYXJlbnQ6bnVsbCx2YWx1ZTpudWxsLGV4cGFuZGVkOiExLHR5cGU6bnVsbCxjaGlsZHJlbjpudWxsLGVsZW06bnVsbCxkZXB0aDowLHNldENhcmV0SWNvblJpZ2h0KCl7dGhpcy5lbGVtLnF1ZXJ5U2VsZWN0b3IoIi5qdl9fY2FyZXQiKS5jbGFzc0xpc3QucmVwbGFjZSgianZfX2NhcmV0LWRvd24iLCJqdl9fY2FyZXQtcmlnaHQiKX0sc2V0Q2FyZXRJY29uRG93bigpe3RoaXMuZWxlbS5xdWVyeVNlbGVjdG9yKCIuanZfX2NhcmV0IikuY2xhc3NMaXN0LnJlcGxhY2UoImp2X19jYXJldC1yaWdodCIsImp2X19jYXJldC1kb3duIil9LGhpZGVDaGlsZHJlbigpe251bGwhPT10aGlzLmNoaWxkcmVuJiZ0aGlzLmNoaWxkcmVuLmZvckVhY2goaXRlbT0+e2l0ZW0uZWxlbS5jbGFzc0xpc3QuYWRkKCJqdl9faGlkZSIpLGl0ZW0uZXhwYW5kZWQmJml0ZW0uaGlkZUNoaWxkcmVuKCl9KX0sc2hvd0NoaWxkcmVuKCl7bnVsbCE9PXRoaXMuY2hpbGRyZW4mJnRoaXMuY2hpbGRyZW4uZm9yRWFjaChpdGVtPT57aXRlbS5lbGVtLmNsYXNzTGlzdC5yZW1vdmUoImp2X19oaWRlIiksaXRlbS5leHBhbmRlZCYmaXRlbS5zaG93Q2hpbGRyZW4oKX0pfSx0b2dnbGU6ZnVuY3Rpb24oKXt0aGlzLmV4cGFuZGVkPyh0aGlzLmV4cGFuZGVkPSExLHRoaXMuaGlkZUNoaWxkcmVuKCksdGhpcy5zZXRDYXJldEljb25SaWdodCgpKToodGhpcy5leHBhbmRlZD0hMCx0aGlzLnNob3dDaGlsZHJlbigpLHRoaXMuc2V0Q2FyZXRJY29uRG93bigpKX19fWZ1bmN0aW9uIGdldFR5cGUodmFsKXtsZXQgdHlwZT10eXBlb2YgdmFsO3JldHVybiBBcnJheS5pc0FycmF5KHZhbCk/dHlwZT0iYXJyYXkiOm51bGw9PT12YWwmJih0eXBlPSJudWxsIiksdHlwZX1mdW5jdGlvbiBjcmVhdGVUcmVlKG9iail7Y29uc3QgdHJlZT1jcmVhdGVOb2RlKCk7cmV0dXJuIHRyZWUudHlwZT1nZXRUeXBlKG9iaiksdHJlZS5jaGlsZHJlbj1bXSx0cmVlLmV4cGFuZGVkPSEwLGZ1bmN0aW9uIHRyYXZlcnNlT2JqZWN0KG9iaixwYXJlbnQpe2ZvcihsZXQga2V5IGluIG9iail7Y29uc3QgY2hpbGQ9Y3JlYXRlTm9kZSgpO2NoaWxkLnBhcmVudD1wYXJlbnQsY2hpbGQua2V5PWtleSxjaGlsZC50eXBlPWdldFR5cGUob2JqW2tleV0pLGNoaWxkLmRlcHRoPXBhcmVudC5kZXB0aCsxLGNoaWxkLmV4cGFuZGVkPSExLCJvYmplY3QiPT10eXBlb2Ygb2JqW2tleV0/KGNoaWxkLmNoaWxkcmVuPVtdLHBhcmVudC5jaGlsZHJlbi5wdXNoKGNoaWxkKSx0cmF2ZXJzZU9iamVjdChvYmpba2V5XSxjaGlsZCksY2hpbGQuZWxlbT1jcmVhdGVFeHBhbmRlZEVsZW1lbnQoY2hpbGQpKTooY2hpbGQudmFsdWU9b2JqW2tleV0sY2hpbGQuZWxlbT1jcmVhdGVOb3RFeHBhbmRlZEVsZW1lbnQoY2hpbGQpLHBhcmVudC5jaGlsZHJlbi5wdXNoKGNoaWxkKSl9fShvYmosdHJlZSksdHJlZS5lbGVtPWNyZWF0ZUV4cGFuZGVkRWxlbWVudCh0cmVlKSx0cmVlfWZ1bmN0aW9uIHJlbmRlcih0cmVlLHRhcmdldEVsZW0pe2xldCByb290RWxlbTtyb290RWxlbT10YXJnZXRFbGVtP2RvY3VtZW50LnF1ZXJ5U2VsZWN0b3IodGFyZ2V0RWxlbSk6ZG9jdW1lbnQuYm9keSxmdW5jdGlvbiB0cmF2ZXJzZVRyZWUobm9kZSxjYWxsYmFjayl7Y2FsbGJhY2sobm9kZSksbnVsbCE9PW5vZGUuY2hpbGRyZW4mJm5vZGUuY2hpbGRyZW4uZm9yRWFjaChpdGVtPT57dHJhdmVyc2VUcmVlKGl0ZW0sY2FsbGJhY2spfSl9KHRyZWUsbm9kZT0+e25vZGUuZXhwYW5kZWR8fG5vZGUuaGlkZUNoaWxkcmVuKCkscm9vdEVsZW0uYXBwZW5kQ2hpbGQobm9kZS5lbGVtKX0pfXdpbmRvdy5qc29uVmlldz17Zm9ybWF0OmZ1bmN0aW9uKGpzb25EYXRhLHRhcmdldEVsZW0pe2xldCBwYXJzZWREYXRhPWpzb25EYXRhOygic3RyaW5nIj09dHlwZW9mIGpzb25EYXRhfHxqc29uRGF0YSBpbnN0YW5jZW9mIFN0cmluZykmJihwYXJzZWREYXRhPUpTT04ucGFyc2UoanNvbkRhdGEpKSxyZW5kZXIoY3JlYXRlVHJlZShwYXJzZWREYXRhKSx0YXJnZXRFbGVtKX19fSgpOw=="></script>
+  <link href="data:text/css,%2Ejslog%2Dboolean%20%7Bcolor%3A%20%23007BFF%3B%7D%0A%2Ejslog%2Dundefined%20%7Bcolor%3A%20%239e0059%3B%7D%0A%2Ejslog%2Dobject%20%7Bcolor%3A%20%23DC3545%3B%7D%0A%2Ejslog%2Dstring%20%7Bcolor%3A%20%2328A745%3B%7D%0A%2Ejslog%2Dnumber%20%7Bcolor%3A%20%2317A2B8%3B%7D%0A%2Ejslog%2Derror%20%7Bcolor%3A%20%23ff70a3%3B%7D%0A" rel="stylesheet" />
+  <script src="data:application/javascript;base64,dmFyIGdsb2JhbCA9IHt9Cgpjb25zdCBub2RlTGlzdEluY2x1ZGUgPSBbJ2lkJywgJ3RhZ05hbWUnLCAnY2xhc3NOYW1lJywgJ2NoaWxkTm9kZXMnXQoKZnVuY3Rpb24gZG9tVG9PYmogKGRlbCkgewogIC8vIGh0dHBzOi8vc3RhY2tvdmVyZmxvdy5jb20vYS80Njg4MTA5Mi8yMDIyNjE1CiAgY29uc3Qgb2JqID0ge30KICBmb3IgKGNvbnN0IHByb3Agb2Ygbm9kZUxpc3RJbmNsdWRlKSB7CiAgICBpZiAoZGVsW3Byb3BdIGluc3RhbmNlb2YgTm9kZUxpc3QpIHsKICAgICAgb2JqW3Byb3BdID0gQXJyYXkuZnJvbShkZWxbcHJvcF0pCiAgICB9IGVsc2UgewogICAgICBvYmpbcHJvcF0gPSBkZWxbcHJvcF0KICAgIH0KICB9CiAgcmV0dXJuIG9iagp9CgpmdW5jdGlvbiBlc2NhcGVIVE1MIChzdHJpbmcpIHsKICByZXR1cm4gKCcnICsgc3RyaW5nKQogICAgLnJlcGxhY2UoLyYvZywgJyZhbXA7JykKICAgIC5yZXBsYWNlKC88L2csICcmbHQ7JykKICAgIC5yZXBsYWNlKC8+L2csICcmZ3Q7JykKfQoKY29uc3QgcmVkaXJlY3RMb2dnZXIgPSAoZnVuY3Rpb24gKG9yaWdDb25zb2xlKSB7CiAgY29uc3QgY29uc29sZUV2ZW50ID0gbmV3IEV2ZW50KCdjb25zb2xlTG9nJykKICByZXR1cm4gZnVuY3Rpb24gKGxvZ0RpdiwgcmV0dXJuQ29uc29sZSA9IGZhbHNlKSB7CiAgICBpZiAoIWxvZ0RpdikgcmV0dXJuIG9yaWdDb25zb2xlCiAgICBjb25zdCBjb25zb2xlID0gewogICAgICBsb2c6IGZ1bmN0aW9uICgpIHsKICAgICAgICAvLyBodHRwczovL3N0YWNrb3ZlcmZsb3cuY29tL2EvNDUzODc1NTgvMjAyMjYxNQogICAgICAgIGxldCBvdXRwdXQgPSAnJwoKICAgICAgICBmb3IgKGNvbnN0IGFyZyBvZiBhcmd1bWVudHMpIHsKICAgICAgICAgIGlmIChhcmcgaW5zdGFuY2VvZiBFcnJvcikgewogICAgICAgICAgICBvdXRwdXQgKz0gJzxzcGFuIGNsYXNzPSJqc2xvZy1lcnJvciI+JwogICAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgb3V0cHV0ICs9IGA8c3BhbiBjbGFzcz0ianNsb2ctJHt0eXBlb2YgYXJnfSI+YAogICAgICAgICAgfQoKICAgICAgICAgIGlmIChhcmcgaW5zdGFuY2VvZiBOb2RlKSB7CiAgICAgICAgICAgIGNvbnN0IGFyZ09iaiA9IGRvbVRvT2JqKGFyZykKICAgICAgICAgICAgb3V0cHV0ID0gb3V0cHV0LnJlcGxhY2UoJyhvYmplY3QpJywgJyhOb2RlKScpCiAgICAgICAgICAgIG91dHB1dCArPSBKU09OLnN0cmluZ2lmeShhcmdPYmosIG51bGwsIDIpCiAgICAgICAgICB9IGVsc2UgaWYgKAogICAgICAgICAgICBhcmcgaW5zdGFuY2VvZiBFcnJvcgogICAgICAgICAgKSB7CiAgICAgICAgICAgIG91dHB1dCArPSBgWyR7YXJnLm5hbWV9XSAke2FyZy5tZXNzYWdlfWAKICAgICAgICAgIH0gZWxzZSBpZiAoCiAgICAgICAgICAgIHR5cGVvZiBhcmcgPT09ICdvYmplY3QnICYmCiAgICAgICAgICAgIHR5cGVvZiBKU09OID09PSAnb2JqZWN0JyAmJgogICAgICAgICAgICB0eXBlb2YgSlNPTi5zdHJpbmdpZnkgPT09ICdmdW5jdGlvbicKICAgICAgICAgICkgewogICAgICAgICAgICBjb25zdCBvdXRKc29uU3RyaW5nID0gSlNPTi5zdHJpbmdpZnkoYXJnKQogICAgICAgICAgICBpZiAob3V0SnNvblN0cmluZy5sZW5ndGggPCA2MCkgewogICAgICAgICAgICAgIG91dHB1dCArPSBlc2NhcGVIVE1MKG91dEpzb25TdHJpbmcpCiAgICAgICAgICAgIH0gZWxzZSB7CiAgICAgICAgICAgICAgb3V0cHV0ICs9IGVzY2FwZUhUTUwoSlNPTi5zdHJpbmdpZnkoYXJnLCBudWxsLCAyKSkKICAgICAgICAgICAgfQogICAgICAgICAgfSBlbHNlIHsKICAgICAgICAgICAgb3V0cHV0ICs9IGVzY2FwZUhUTUwoYXJnKQogICAgICAgICAgfQoKICAgICAgICAgIG91dHB1dCArPSAnPC9zcGFuPiZuYnNwOycKICAgICAgICB9CgogICAgICAgIGxvZ0Rpdi5pbm5lckhUTUwgKz0gb3V0cHV0ICsgJzxicj4nCiAgICAgICAgbG9nRGl2LmRpc3BhdGNoRXZlbnQoY29uc29sZUV2ZW50KQogICAgICAgIC8vIG9yaWdDb25zb2xlLmxvZy5hcHBseSh1bmRlZmluZWQsIGFyZ3VtZW50cyk7CiAgICAgIH0sCiAgICAgIHRhYmxlOiBmdW5jdGlvbiAob2JqKSB7CiAgICAgICAgbGV0IHRhYmxlID0gJzx0YWJsZT48dGhlYWQ+PHRyPjx0aD4oaW5kZXgpPC90aD48dGg+VmFsdWVzPC90aD48L3RyPjwvdGhlYWQ+PHRib2R5PicKICAgICAgICBmb3IgKGNvbnN0IGluZGV4IGluIG9iaikgewogICAgICAgICAgaWYgKE9iamVjdC5wcm90b3R5cGUuaGFzT3duUHJvcGVydHkuY2FsbChvYmosIGluZGV4KSkgewogICAgICAgICAgICB0YWJsZSArPSBgPHRyPjx0ZD4ke2luZGV4fTwvdGQ+PHRkPjxjb2RlPiR7b2JqW2luZGV4XS50b1N0cmluZygpfTwvY29kZT48L3RkPjwvdHI+YAogICAgICAgICAgfQogICAgICAgIH0KICAgICAgICB0YWJsZSArPSAnPC90Ym9keT48L3RhYmxlPicKICAgICAgICBsb2dEaXYuaW5uZXJIVE1MICs9IHRhYmxlICsgJzxicj4nCiAgICAgICAgbG9nRGl2LmRpc3BhdGNoRXZlbnQoY29uc29sZUV2ZW50KQogICAgICB9LAogICAgICBjbGVhcjogZnVuY3Rpb24gKCkgewogICAgICAgIGxvZ0Rpdi5pbm5lckhUTUwgPSAnJwogICAgICB9CiAgICB9CgogICAgaWYgKHJldHVybkNvbnNvbGUpIHsKICAgICAgcmV0dXJuIChjb25zb2xlKQogICAgfTsKCiAgICByZXR1cm4gZnVuY3Rpb24gKGNvZGUpIHsKICAgICAgdHJ5IHsKICAgICAgICBjb25zdCByZXQgPSBldmFsKGNvZGUpCiAgICAgICAgaWYgKHR5cGVvZiByZXQgIT09ICd1bmRlZmluZWQnKSBjb25zb2xlLmxvZyhyZXQpCiAgICAgIH0gY2F0Y2ggKGVycm9yKSB7CiAgICAgICAgY29uc29sZS5sb2coZXJyb3IpCiAgICAgIH0KICAgIH0KICB9Cn0pKHdpbmRvdy5jb25zb2xlKQo="></script>
+</head>
+<body>
+
+
+
+<main>
+
+
+
+<h1 id="string-to-integeratoi"><a href="https://leetcode.com/problems/string-to-integer-atoi/">8. String To Integer(atoi)</a></h1>
+<h2 id="solution">Solution</h2>
+<p>We can iterate the string character by character from left to right and build up the integer one digit at a time. However, we stop building the number when a non-digit character is spotted, or the number becomes too large to fit inside a 32-bit signed integer.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">/**</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"> * </span><span class="an">@param</span><span class="co"> </span><span class="cv">{string}</span><span class="co"> s</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"> * </span><span class="an">@return</span><span class="co"> {number}</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"> */</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> myAtoi <span class="op">=</span> <span class="kw">function</span>(s) {</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> sign <span class="op">=</span> <span class="kw">null</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">let</span> num <span class="op">=</span> <span class="kw">null</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span>(<span class="kw">let</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> s<span class="op">.</span><span class="at">length</span><span class="op">;</span> i<span class="op">++</span>) {</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>      <span class="kw">const</span> c <span class="op">=</span> s[i]</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>      <span class="co">// begin number</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (num <span class="op">===</span> <span class="kw">null</span> <span class="op">&amp;&amp;</span> sign <span class="op">===</span> <span class="kw">null</span>)  {</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> (c <span class="op">===</span> <span class="st">&quot; &quot;</span>) {</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>          <span class="cf">continue</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        } </span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> (c <span class="op">===</span> <span class="st">&quot;-&quot;</span>) {</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>          sign <span class="op">=</span> <span class="op">-</span><span class="dv">1</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>          <span class="cf">continue</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>        } </span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> (c <span class="op">===</span> <span class="st">&quot;+&quot;</span>) {</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>          sign <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>          <span class="cf">continue</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>        }</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>      <span class="co">// end number</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (<span class="op">!</span><span class="ss">/</span><span class="sc">[0-9]</span><span class="ss">/</span><span class="op">.</span><span class="fu">test</span>(c)) {</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>      <span class="co">// out of range</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>      <span class="kw">const</span> n <span class="op">=</span> <span class="op">+</span>c</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>      <span class="kw">const</span> boundry <span class="op">=</span> sign <span class="op">===</span> <span class="op">-</span><span class="dv">1</span> <span class="op">?</span> <span class="dv">2147483648</span> <span class="op">:</span> <span class="dv">2147483647</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (num <span class="op">&gt;</span> (boundry <span class="op">-</span> n)<span class="op">/</span><span class="dv">10</span>) {</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>        num <span class="op">=</span> boundry</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>      num <span class="op">=</span> (num <span class="op">||</span> <span class="dv">0</span>) <span class="op">*</span> <span class="dv">10</span> <span class="op">+</span> (<span class="op">+</span>c)</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> num <span class="op">!==</span> <span class="kw">null</span> <span class="op">?</span> num <span class="op">*</span> (sign <span class="op">||</span> <span class="dv">1</span>) <span class="op">:</span> <span class="dv">0</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="fu">myAtoi</span>(<span class="st">&quot;   -42&quot;</span>))</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="fu">myAtoi</span>(<span class="st">&quot;4193 with words&quot;</span>))</span></code></pre></div>
+<div id="out-unnamed-chunk-1">
+<pre></pre>
+</div>
+<script type="text/javascript">
+const log_out_unnamed_chunk_1 = redirectLogger(document.querySelector("#out-unnamed-chunk-1 > pre"))
+document.addEventListener("DOMContentLoaded", function() {
+log_out_unnamed_chunk_1(`/**
+ * @param {string} s
+ * @return {number}
+ */
+var myAtoi = function(s) {
+    let sign = null
+    let num = null
+
+    for(let i = 0; i < s.length; i++) {
+      const c = s[i]
+
+      // begin number
+      if (num === null && sign === null)  {
+        if (c === " ") {
+          continue
+        } 
+        
+        if (c === "-") {
+          sign = -1
+          continue
+        } 
+
+        if (c === "+") {
+          sign = 1
+          continue
+        }
+      }
+
+      // end number
+      if (!/[0-9]/.test(c)) {
+        break
+      }
+
+      // out of range
+      const n = +c
+
+      const boundry = sign === -1 ? 2147483648 : 2147483647
+      if (num > (boundry - n)/10) {
+        num = boundry
+        break
+      }
+
+      num = (num || 0) * 10 + (+c)
+    }
+
+    return num !== null ? num * (sign || 1) : 0
+};
+
+console.log(myAtoi("   -42"))
+console.log(myAtoi("4193 with words"))`)
+})
+</script>
+<h2 id="complexity-analysis">Complexity Analysis</h2>
+<ul>
+<li>Time Complexity: O(n)<br />
+</li>
+<li>Space Complexity: O(1)</li>
+</ul>
+
+</main>
+
+
+<style type="text/css" charset="utf-8">
+main {
+  max-width: 48em;
+  margin: auto;
+  padding: 0 2em;
+}
+
+img {
+  max-width: 100%;
+}
+</style>
+
+</body>
+</html>
