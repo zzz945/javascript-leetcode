@@ -14,4 +14,4 @@
 
 [7.Reverse Integer](https://zzz945.github.io/javascript-leetcode/7.Reverse_Integer)
 
-[8.String To Integer(atoi)](https://zzz945.github.io/javascript-leetcode/8.String_to_Integer(atoi))
+[8.String To Integer(atoi)](https://zzz945.github.io/javascript-leetcode/8.String_To_Integer(atoi))
