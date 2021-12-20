@@ -1,0 +1,42 @@
+---
+output: js4shiny::html_document_js
+---
+
+# [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
+
+## Solution
+
+We starts with the widest container, l = 0 and r = n - 1. Let's say the left one is shorter: h[l] < h[r]. 
+Then, this is already the largest container the left one can possibly form. There's no need to consider 
+it again. Therefore, we just throw it away and start again with l = 1 and r = n -1. In the end, we have got 
+the largest containers that each one could form. By comparing them we could get the answer.
+
+![](explain.png)
+
+```{js}
+/**
+ * @param {number[]} height
+ * @return {number}
+ */
+var maxArea = function(height) {
+    let max = 0
+    let l = 0;
+    let r = height.length - 1
+    while (l !== r) {
+      const lh = height[l]
+      const rh = height[r]
+      max = Math.max(max, (r - l) * Math.min(lh, rh))
+      if (lh > rh) r--
+      else l++
+    }
+
+    return max
+};
+
+console.log(maxArea([1,8,6,2,5,4,8,3,7]))
+```
+
+## Complexity Analysis
+
+* Time Complexity: O(n)       
+* Space Complexity: O(1)
